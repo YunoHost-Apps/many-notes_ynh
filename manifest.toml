@@ -13,10 +13,7 @@ maintainers = ["eric_G"]
 
 [upstream]
 license = "MIT"
-website = "https://example.com"
-demo = "https://demo.example.com"
 admindoc = "https://github.com/brufdev/many-notes/blob/main/docs/installation/non-docker.md"
-userdoc = "https://yunohost.org/apps"
 code = "https://github.com/brufdev/many-notes"
 
 [integration]
