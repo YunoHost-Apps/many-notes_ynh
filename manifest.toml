@@ -46,7 +46,7 @@ ram.runtime = "50M"
     url = "https://github.com/brufdev/many-notes/archive/refs/tags/v0.7.2.tar.gz"
     sha256 = "8604b7ce258d86b7914a766b15d201a41cfe66de95e109f92ef3a85be904a087"
 
-    # autoupdate.strategy = "latest_github_tag"
+    autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
     allow_email = true
