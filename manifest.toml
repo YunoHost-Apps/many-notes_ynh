@@ -4,8 +4,8 @@ packaging_format = 2
 
 id = "many-notes"
 name = "Many Notes"
-description.en = "Markdown note-taking app designed for simplicity"
-description.fr = "Prise de notes en Markdown conçue pour la simplicité"
+description.en = "Markdown note-taking app"
+description.fr = "Prise de notes en Markdown"
 
 version = "0.7.2~ynh1"
 
