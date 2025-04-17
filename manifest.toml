@@ -13,10 +13,7 @@ maintainers = ["eric_G"]
 
 [upstream]
 license = "MIT"
-website = "https://example.com"
-demo = "https://demo.example.com"
-admindoc = "https://yunohost.org/packaging_apps"
-userdoc = "https://yunohost.org/apps"
+admindoc = "https://github.com/brufdev/many-notes/blob/main/docs/installation/non-docker.md"
 code = "https://github.com/brufdev/many-notes"
 
 [integration]
@@ -29,17 +26,13 @@ ldap = false
 
 sso = false
 
-disk = "50M"
-ram.build = "50M"
-ram.runtime = "50M"
+disk = "450M"
+ram.build = "250M"
+ram.runtime = "100M"
 
 [install]
     [install.domain]
     type = "domain"
-
-    [install.path]
-    type = "path"
-    default = "/many-notes"
 
     [install.init_main_permission]
     type = "group"
@@ -53,7 +46,7 @@ ram.runtime = "50M"
     url = "https://github.com/brufdev/many-notes/archive/refs/tags/v0.7.2.tar.gz"
     sha256 = "8604b7ce258d86b7914a766b15d201a41cfe66de95e109f92ef3a85be904a087"
 
-    # autoupdate.strategy = "latest_github_tag"
+    autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
     allow_email = true
@@ -61,15 +54,13 @@ ram.runtime = "50M"
     [resources.install_dir]
     group = "www-data:r-x"
 
-    [resources.data_dir]
-
     [resources.permissions]
     main.url = "/"
 
     [resources.ports]
 
     [resources.apt]
-    packages = "mariadb-server, php8.4-mysql"
+    packages = "mariadb-server, php8.4-mysql, php8.4-dom"
 
     [resources.database]
     type = "mysql"
