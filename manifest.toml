@@ -7,7 +7,7 @@ name = "Many Notes"
 description.en = "Markdown note-taking app"
 description.fr = "Prise de notes en Markdown"
 
-version = "0.7.2~ynh1"
+version = "0.8.1~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -43,8 +43,8 @@ ram.runtime = "100M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/brufdev/many-notes/archive/refs/tags/v0.7.2.tar.gz"
-    sha256 = "8604b7ce258d86b7914a766b15d201a41cfe66de95e109f92ef3a85be904a087"
+    url = "https://github.com/brufdev/many-notes/archive/refs/tags/v0.8.1.tar.gz"
+    sha256 = "3ed1f7097d522926f3213bbbae0f6068d4f3f400888a53d1731ba6ad7e88b5fd"
 
     autoupdate.strategy = "latest_github_tag"
 
