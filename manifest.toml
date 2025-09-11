@@ -7,7 +7,7 @@ name = "Many Notes"
 description.en = "Markdown note-taking app"
 description.fr = "Prise de notes en Markdown"
 
-version = "0.12.4~ynh1"
+version = "0.12.5~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -17,13 +17,12 @@ admindoc = "https://github.com/brufdev/many-notes/blob/main/docs/installation/no
 code = "https://github.com/brufdev/many-notes"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.17"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
 
 ldap = false
-
 sso = false
 
 disk = "450M"
@@ -43,8 +42,8 @@ ram.runtime = "100M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/brufdev/many-notes/archive/refs/tags/v0.12.4.tar.gz"
-    sha256 = "8d2505324413e3408ad6fea8293504934075bfb5a4be2118e394ea81d5897bd4"
+    url = "https://github.com/brufdev/many-notes/archive/refs/tags/v0.12.5.tar.gz"
+    sha256 = "d37818244de7635d6b6f41f42bf531e61dce970248abfd99ae84aaef2ff883aa"
 
     autoupdate.strategy = "latest_github_tag"
 
@@ -64,3 +63,9 @@ ram.runtime = "100M"
 
     [resources.database]
     type = "mysql"
+
+    [resources.nodejs]
+    version = "22"
+
+    [resources.composer]
+    version = "2.8.8"
