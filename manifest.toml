@@ -65,7 +65,7 @@ ram.runtime = "100M"
     type = "mysql"
 
     [resources.nodejs]
-    version = "22"
+    version = "24"
 
     [resources.composer]
     version = "2.10.2"
