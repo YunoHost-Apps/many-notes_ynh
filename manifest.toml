@@ -17,7 +17,7 @@ admindoc = "https://github.com/brufdev/many-notes/blob/main/docs/installation/no
 code = "https://github.com/brufdev/many-notes"
 
 [integration]
-yunohost = ">= 12.1.38"
+yunohost = ">= 12.1.40"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -59,7 +59,7 @@ ram.runtime = "100M"
     [resources.ports]
 
     [resources.apt]
-    packages = "mariadb-server, php8.4-mysql, php8.4-dom, php8.4-curl, php8.4-mbstring"
+    packages = "mariadb-server, php8.5-mysql, php8.5-dom, php8.5-curl, php8.5-mbstring"
 
     [resources.database]
     type = "mysql"
@@ -68,4 +68,4 @@ ram.runtime = "100M"
     version = "22"
 
     [resources.composer]
-    version = "2.9.5"
+    version = "2.10.2"
